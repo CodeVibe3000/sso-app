@@ -1,0 +1,29 @@
+.app {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.appLogin__button,
+.main__logout {
+  padding: 10px 30px;
+  cursor: pointer;
+  background-color: rgb(193, 78, 228);
+  outline-width: 0;
+  border: 0;
+  color: white;
+  border-radius: 20px;
+}
+
+.appLogin__input {
+  margin: 20px 0px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 1px solid rgb(189, 189, 189);
+  outline: none;
+}
+
+.appLogin__input:focus {
+  border-radius: 8px;
+  border: 2px solid rgb(193, 78, 228);
+}

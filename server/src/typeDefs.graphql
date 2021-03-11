@@ -1,0 +1,32 @@
+type Query {
+  me: User
+  fetchVerifications: [Verification]
+  fetchUserFromVerification(key: Int): User
+  hello: String
+}
+
+type Mutation {
+  register(email: String, username: String, password: String): Boolean
+  login(email: String, password: String): LoginResponse
+  createNewVerificationRequest(userEmail: String, appName: String): Int
+  verify(id: Int): Boolean
+}
+
+type LoginResponse {
+  accessToken: String
+  user: User
+}
+
+type User {
+  id: Int
+  email: String
+  username: String
+}
+
+type Verification {
+  id: Int
+  userEmail: String
+  appName: String
+  dateTime: String
+  verified: Boolean
+}

@@ -1,0 +1,39 @@
+.loginContainer {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.login input {
+  margin: 10px 0px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 1px solid rgb(189, 189, 189);
+  outline: none;
+}
+
+.login input:focus {
+  border-radius: 8px;
+  border: 2px solid rgb(193, 78, 228);
+}
+
+.login__chooseMethod > p {
+  cursor: pointer;
+}
+
+.login > button {
+  padding: 10px 30px;
+  cursor: pointer;
+  background-color: rgb(193, 78, 228);
+  outline-width: 0;
+  border: 0;
+  color: white;
+  border-radius: 20px;
+}
